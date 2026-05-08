@@ -1,11 +1,11 @@
 terraform {
-  backend "local" {
-    path = "./state/terraform.tfstate"
-  }
-
   required_providers {
     kubernetes = {
       source = "hashicorp/kubernetes"
+    }
+
+    helm = {
+      source = "hashicorp/helm"
     }
   }
 }
